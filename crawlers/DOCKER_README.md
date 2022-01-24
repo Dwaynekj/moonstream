@@ -1,2 +1,5 @@
-- Full run `docker-compose up`
-- Testing crawler commands `docker run -it --network moonstream_default --entrypoint /bin/bash moonstreamcrawlers`
+- Full run 
+  - `docker-compose up`
+  - `docker-compose up --build moonstreamcrawlers`
+- Testing crawler commands 
+  - `docker run -it --network moonstream_default --entrypoint /bin/bash moonstreamcrawlers`
