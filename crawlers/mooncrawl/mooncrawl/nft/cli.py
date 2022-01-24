@@ -198,6 +198,7 @@ def ethereum_label_handler(args: argparse.Namespace) -> None:
 
 
 def push_summary(result: Dict[str, Any], humbug_token: Optional[str] = None):
+    return
     if humbug_token is None:
         humbug_token = NFT_HUMBUG_TOKEN
     title = (
