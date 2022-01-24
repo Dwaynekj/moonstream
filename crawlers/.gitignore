@@ -164,6 +164,11 @@ dev.env
 prod.env
 prod.env.ps1
 dev.env.ps1
+docker.env
+docker.dev.env
+docker.test.dev
+docker.prod.env
+docker.moonstreamcrawlers.env
 .venv
 .crawlers
 .secrets
