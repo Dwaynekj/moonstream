@@ -169,6 +169,7 @@ docker.dev.env
 docker.test.dev
 docker.prod.env
 docker.moonstreamcrawlers.env
+configs/docker.moonstreamcrawlers.env
 .venv
 .crawlers
 .secrets
