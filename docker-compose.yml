@@ -38,19 +38,19 @@ services:
       db:
         condition: service_healthy
 
-#  # Moonstream DB application
-#  moonstreamdb:
-#    build:
-#      context: ./db/
-#      dockerfile: ./Dockerfile
-#    image: moonstreamdb:latest
-#    # Specify environment file for compose setup
-#    env_file: ./db/configs/docker.moonstreamdb.env
-#    environment:
-#      ALEMBIC_CONFIG: ./configs/alembic.moonstreamdb.ini
-#    depends_on:
-#      db:
-#        condition: service_healthy
+  # Moonstream DB application
+  moonstreamdb:
+    build:
+      context: ./db/
+      dockerfile: ./Dockerfile
+    image: moonstreamdb:latest
+    # Specify environment file for compose setup
+    env_file: ./db/configs/docker.moonstreamdb.env
+    environment:
+      ALEMBIC_CONFIG: ./configs/alembic.moonstreamdb.ini
+    depends_on:
+      db:
+        condition: service_healthy
 
   # DB postgres application
   db:

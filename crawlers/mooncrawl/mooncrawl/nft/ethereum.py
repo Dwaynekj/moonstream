@@ -358,7 +358,7 @@ def add_labels(
     from_block: Optional[int] = None,
     to_block: Optional[int] = None,
     contract_address: Optional[str] = None,
-    batch_size: int = 100,
+    batch_size: int = 20,
 ) -> None:
     """
     Crawls blocks between from_block and to_block checking for NFT mints and transfers.
@@ -569,6 +569,8 @@ def block_bounded_summary(
     )
     first_block = None
     last_block = None
+    min_block = None
+    max_block = None
     num_blocks = 0
     for block in blocks:
         if num_blocks == 0:
